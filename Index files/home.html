@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="icon" type="image/png" href="../Index files/Portal.png">
+  <link rel="stylesheet" href="frontpage.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <header>
+    <div id="drag-container">
+      <img id="drag-image" src="pic.jpg">
+    </div>
+    <h1></h1>
+    <div class="btn">
+      <span class="fas fa-bars"></span>
+     </div>
+     <nav class="sidebar">
+      <div class="text">
+         Menu
+      </div>
+      <ul>
+         <li class="active"><a href="home.html" id="transition">Home</a></li>
+         <li>
+            <a href="#" class="feat-btn">Structural Diagram
+            <span class="fas fa-caret-down first"></span>
+            </a>
+            <ul class="feat-show">
+               <li><a id="transition" href="../structural/Structuraldiagram.html">Structure 1 </a></li>
+               <li><a id="transition" href="../structural/firstdiag.html">Structure 2</a></li>
+               <li><a id="transition" href="../structural/2nd.html">Structure 3 </a></li>
+               <li><a id="transition" href="../structural/3rd.html">Structure 4</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="#" class="serv-btn">Behavioral Diagram
+            <span class="fas fa-caret-down second"></span>
+            </a>
+            <ul class="serv-show">
+              <li><a id="transition" href="../behavioral/bh1.html">Behavioral 1</a></li>
+              <li><a id="transition" href="../behavioral/bh2.html">Behavioral 2</a></li>
+              <li><a id="transition" href="../behavioral/bh3.html">Behavioral 3</a></li>
+              <li><a id="transition" href="../behavioral/bh4.html">Behavioral 4</a></li>
+            </ul>
+         </li>
+         <li><a id="transition" href="../Gift/loading.html">Gift</a></li>
+
+      </ul>
+     </nav>
+    </div>
+  </div>   
+  </header>
+</head> 
+<body>
+
+<div class="container1">
+  <div class="content1">
+    <h1>Structural diagram</h1>
+      <p>Structure diagrams depict the static structure of the elements in your system. i.e., how one object relates to another. It shows the things in the system – classes, objects, packages or modules, physical nodes, components, and interfaces. For example, just as the static aspects of a house encompass the existence and placement of such things as walls, doors, windows, pipes, wires, and vents. The Seven UML structural diagrams are roughly organized around the major groups of things you’ll find when modeling a system.</p>
+        <div class="conone">
+          <a id="transition" href="..//structural/Structuraldiagram.html"><img src="../Index files/StructuralMain.jpeg" alt="img" class="enlarge-on-hover"></a>
+        </div> 
+        <div class="examst"> 
+            <a id="transition" href="../structural/Structuraldiagram.html"><button>Examples</button></a>
+        </div>
+    </div>
+</div>
+<div class="container2">
+  <div class="content2">
+    <h1>Behavioral diagram</h1>
+      <p>It shows how the system behaves and interacts with itself and other entities (users, other systems). They show how data moves through the system, how objects communicate with each other, how the passage of time affects the system, or what events cause the system to change internal states. Since behavior diagrams illustrate the behavior of a system, they are used extensively to describe the functionality of software systems. As an example, the activity diagramdescribes the business and operational step-by-step activities of the components in a system.</p>
+       <div class="contwo">
+        <a href="../behavioral/bh1.html" id="transition" ><img src="../Index files/BehavioralMain.jpg" alt="img2" class="enlarge-on-hover2"></a>
+    </div>
+           <div class="exambh" href="../behavioral/bh1.html">
+          <a href="../behavioral/bh1.html" id="transition"><button>Examples</button></a>
+        </div>  
+
+      </div>
+</div>
+<div class="container3">
+  <div class="content3">
+    <h1>UML</h1>
+      <p>UML stands for Unified Modeling Language, which is a standardized visual language used to describe, specify, design, and document software systems. UML was developed by a consortium of software development companies and experts in the mid-1990s, and it has since become a widely adopted standard in the software industry.
+        UML provides a set of graphical notations and tools for representing various aspects of a software system, including its structure, behavior, and interactions with external systems. UML diagrams can be used to communicate design ideas and requirements between developers, project managers, and other stakeholders, and to facilitate the implementation and testing of software systems.  
+        There are several types of UML diagrams, including class diagrams, use case diagrams, sequence diagrams, state diagrams, activity diagrams, and others, each with a specific purpose and set of notations. UML can be used with various software development methodologies, including object-oriented, structured, and agile approaches.</p>
+          <div class="conthree">
+            <a><img src="../Index files/UMLDIAGRAM.png" alt="img3" class="enlarge-on-hover3"></a>
+          </div> 
+          </div>
+      </div>
+</div>
+
+<div class="reserve">
+   <div class="allright">
+      <a href="https://youtu.be/qt1GGBrAoko" id="transition" >Alrights Reserved to me</a>
+   </div>
+   <div class="birdybald">
+     <img src="../Index files/bird.gif" alt="birdy">
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).on("click", "a#transition", function(event) {
+  event.preventDefault();
+  const href = $(this).attr("href");
+
+  $("body").fadeOut(500, function() {
+    window.location.href = href;
+  });
+});
+
+
+
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+    });
+      $('.feat-btn').click(function(){
+        $('nav ul .feat-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+      $('.serv-btn').click(function(){
+        $('nav ul .serv-show').toggleClass("show1");
+        $('nav ul .second').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+
+
+
+/*drag yung pic*/
+
+var dragItem = document.querySelector("#drag-image");
+var container = document.querySelector("#drag-container");
+var active = false;
+var currentX;
+var currentY;
+var initialX;
+var initialY;
+var xOffset = 0;
+var yOffset = 0;
+
+container.addEventListener("mousedown", dragStart);
+container.addEventListener("mouseup", dragEnd);
+container.addEventListener("mousemove", drag);
+
+function dragStart(e) {
+  if (e.target === dragItem) {
+    initialX = e.clientX - xOffset;
+    initialY = e.clientY - yOffset;
+    if (e.targetTouches) {
+      initialX = e.targetTouches[0].clientX - xOffset;
+      initialY = e.targetTouches[0].clientY - yOffset;
+    }
+    if (e.button === 0) {
+      active = true;
+    }
+  }
+}
+
+function dragEnd(e) {
+  initialX = currentX;
+  initialY = currentY;
+
+  active = false;
+}
+
+function drag(e) {
+  if (active) {
+    e.preventDefault();
+
+    currentX = e.clientX - initialX;
+    currentY = e.clientY - initialY;
+    if (e.targetTouches) {
+      currentX = e.targetTouches[0].clientX - initialX;
+      currentY = e.targetTouches[0].clientY - initialY;
+    }
+
+    xOffset = currentX;
+    yOffset = currentY;
+
+    setTranslate(currentX, currentY, dragItem);
+  }
+}
+
+function setTranslate(xPos, yPos, el) {
+  el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+}
+
+//hide dito yung image
+
+
+
+
+</script>   
+</body>
+</html>
+
+
+
+
+
+
