@@ -1,0 +1,129 @@
+body{
+    background: rgb(76, 79, 228);
+  background: radial-gradient(circle, rgb(47, 73, 221) 0%, rgb(77, 140, 235) 100%);
+  margin: 0;
+  height: 2100px;
+  width: 100%;
+  }
+  ::-webkit-scrollbar {
+    width: 10px; 
+    background-color: rgb(29, 87, 247);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(241, 85%, 56%); 
+    border-radius: 5px; 
+  }
+  header {
+    
+    height: 1000px;
+    width: 100%;
+    background-image: url("BP.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; /* set the background position to center bottom */
+  }
+  
+  .body{
+    justify-content: center;
+    text-align:center;
+    margin: 0;
+    height: 1000px;
+    width: 100%;
+  }
+  
+  .body .picture img{
+    display: inline-flex;
+    justify-content: center;
+    width: 600px;
+    margin-top: 20px;   
+  }
+  
+  .body p{   
+  display: inline-flex;
+  width: 80%;
+    margin: 10px;
+    justify-content: center;
+     text-align: justify;
+     font-size: medium;
+     font-weight: bold;
+     margin-top: 20px;
+     font-family: 'mv boli', 'san-serif';
+  }
+  
+  .button-group{
+  
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  
+  
+  .button {
+  font-family: 'Segoe Print', 'san-serif';
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0f0f0f;
+  transition: background-color 0.2s ease;
+  font-weight: bold;
+  width: 75px;
+  }
+  
+  .button-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .button-group li {
+  display: inline-block;
+  }
+  
+  .button-back {
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+  margin-right: 70px;
+  background-color: #68abe2b9;
+  }
+  
+  .button-home {
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+  margin-right: 70px;
+  background-color: #68abe2b9;
+  }
+  
+  .button-forward {
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: ease-out 0.3s;
+  margin-right: 70px;
+  background-color: #68abe2b9;
+  }
+  
+  .button:hover {
+  transition: ease-in 0.3s;
+  transform: scale(1.5);
+  background-color: #181bd1b9;
+  color: #ebe6e6;
+  }
+  
+  h1{
+    font-family: 'Segoe Print', 'san-serif';
+    font-size: 50px;
+    color: #0f0f0f;
+    text-align: center;
+    margin-top: 60px;
+  
+  }
+  
+  
+  
+    

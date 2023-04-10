@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Use Case Diagram</title>
+    <link rel="stylesheet" type="text/css" href="bh2.css">
+    <header>
+  
+  </header>
+</head>
+<body>
+  <div class="body">
+    <div class="picture">
+        <img src="use_case_diagram.png">
+    </div>
+    <h1>Use case Diagram</h1>
+    <p> A UML use case diagram is the primary form of system/software requirements for a new software program underdeveloped. Use cases specify the expected behavior (what), and not the exact method of making it happen (how). Use cases once specified can be denoted both textual and visual representation (i.e. use case diagram). A key concept of use case modeling is that it helps us design a system from the end user's perspective. It is an effective technique for communicating system behavior in the user's terms by specifying all externally visible system behavior.</p>
+</div>
+
+<nav class="button-group">
+    <ul>
+      <li>
+        <a href="../behavioral/bh1.html" class="button button-back">
+          <span id="transition"  class="button-label">Back</span>
+        </a>
+      </li>
+      <li>
+        <a href="../Index files/home.html" class="button button-home">
+          <span  id="transition" class="button-label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="../behavioral/bh3.html" class="button button-forward">
+          <span  id="transition" class="button-label">Forward</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    $(document).on("click", "span#transition", function(event) {
+      event.preventDefault();
+      const href = $(this).attr("href");
+    
+      $("body").fadeOut(300, function() {
+        window.location.href = href;
+      });
+    });
+    </script>
+</body>
+</html>
