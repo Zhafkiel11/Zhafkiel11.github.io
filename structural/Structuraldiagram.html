@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Diagram</title>
+    <link rel="stylesheet" href="structure.css">
+    <link rel="icon" type="image/png" href="../Index files/Portal.png">
+   <header>
+   </header> 
+</head>
+<body>
+    <div class="body">
+        <div class="picture">
+            <img src="component_diagram.png">
+        </div>
+        <h1>Component Diagram</h1>
+<p>A component diagram breaks down the actual system under development into various high levels of functionality. Each component is responsible for one clear aim within the entire system and only interacts with other essential elements on a need-to-know basis.</p>
+    </div>
+    <nav class="button-group">
+        <ul>
+
+          <li>
+            <a href="../behavioral/bh1.html" class="button button-back">
+              <span  id="transition" class="button-label">behavioral</span>
+            </a>
+          </li>   
+                   <li>
+            <a class="button button-home" href="../Index files/home.html" >
+              <span  id="transition"  class="button-label">Home</span>
+            </a>
+          </li>
+               <li>
+            <a href="../structural/firstdiag.html" class="button button-forward">
+              <span  id="transition" class="button-label">Forward</span>
+            </a>
+          </li>
+        </ul>   
+      </nav>
+      <script>
+
+        $(document).on("click", "span#transition", function(event) {
+          event.preventDefault();
+          const href = $(this).attr("href");
+        
+          $("body").fadeOut(300, function() {
+            window.location.href = href;
+          });
+        });
+        </script>
+</body>
+</html>
+
